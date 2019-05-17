@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1558037092 source:c:\users\diana\desktop\cefet\4º período\arquitetura de arquivos\trabalho\indice\main.c
+	<stdio.h>
+	<string.h>
+
+1558030632 source:c:\users\diana\desktop\cefet\4º período\arquitetura de arquivos\trabalho\indice\ordenar.c
+	<stdio.h>
+	<string.h>
+
