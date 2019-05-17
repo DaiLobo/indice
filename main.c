@@ -13,10 +13,10 @@ int main()
     FILE *indice = fopen("indice.txt", "w"); /*cria o arquivo indice*/
 
     fgets(linha, 2048, f); /*abrir arquivo f e armazenar 2048 bytes no linha*/
-    long posicao_chave = ftell(f); /*posicao absoluta da cabeça de leitura*/
+    long posicao_chave = ftell(f); /*posicao absoluta da cabeÃ§a de leitura*/
     fgets(linha, 2048, f);
 
-    while(!feof(f)) /*enquanto não termina arquivo f*/
+    while(!feof(f)) /*enquanto nÃ£o termina arquivo f*/
     {
         printf("%d", n);
         coluna = 0;
@@ -27,7 +27,7 @@ int main()
             {
                 strncpy(nis_chave, campo, 14); /*define o tamanho da variavel*/
                 fprintf(indice, "%.14s %010ld\n", nis_chave, posicao_chave);
-                printf("NIS => %s esta em %ld\n", nis_chave, posicao_chave);
+               /* printf("NIS => %s esta em %ld\n", nis_chave, posicao_chave);*/
             }
             coluna++;
             campo = strtok(NULL,"\t");
